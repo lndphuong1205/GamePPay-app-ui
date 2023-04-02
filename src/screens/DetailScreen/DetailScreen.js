@@ -15,7 +15,7 @@ import { Items } from '../database/Database';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { COLOURS, paidGames } from '../../model/data';
+import { COLOURS, paidGames } from '../../model/dataGames';
 
 const DetailScreen = ({ route, navigation }) => {
 
@@ -194,13 +194,13 @@ const DetailScreen = ({ route, navigation }) => {
         <View
           style={{
             paddingHorizontal: 16,
-            marginTop: 6,
+            marginVertical: 10,
           }}>
           <View
             style={{
               flexDirection: 'row',
               alignItems: 'center',
-              marginVertical: 14,
+              marginVertical: 4,
             }}>
             <Entypo
               name="shopping-cart"
@@ -221,7 +221,7 @@ const DetailScreen = ({ route, navigation }) => {
           <View
             style={{
               flexDirection: 'row',
-              marginVertical: 4,
+              marginVertical: 0,
               alignItems: 'center',
               justifyContent: 'space-between',
             }}>
@@ -230,7 +230,7 @@ const DetailScreen = ({ route, navigation }) => {
                 fontSize: 24,
                 fontWeight: '600',
                 letterSpacing: 0.5,
-                marginVertical: 4,
+                marginVertical: 0,
                 color: COLOURS.black,
                 maxWidth: '84%',
               }}>
@@ -257,7 +257,7 @@ const DetailScreen = ({ route, navigation }) => {
               lineHeight: 20,
               maxWidth: '85%',
               maxHeight: 44,
-              marginBottom: 18,
+              marginBottom: 4,
             }}>
             {product.subtitle}
           </Text>
@@ -266,7 +266,7 @@ const DetailScreen = ({ route, navigation }) => {
               flexDirection: 'row',
               alignItems: 'center',
               justifyContent: 'space-between',
-              marginVertical: 14,
+              marginVertical: 0,
               borderBottomColor: COLOURS.backgroundLight,
               borderBottomWidth: 1,
               paddingBottom: 20,
@@ -308,6 +308,7 @@ const DetailScreen = ({ route, navigation }) => {
           <View
             style={{
               paddingHorizontal: 16,
+              marginBottom: 10,
             }}>
             <Text
               style={{
@@ -317,10 +318,10 @@ const DetailScreen = ({ route, navigation }) => {
                 color: COLOURS.black,
                 marginBottom: 4,
               }}>
-              {product.price}
+              {product.price}$
             </Text>
             <Text>
-              Tax Rate 2%~({product.price})
+              Tax Rate 2%~({(product.price + product.price / 20).toFixed(2)}$)
             </Text>
           </View>
         </View>
@@ -336,7 +337,8 @@ const DetailScreen = ({ route, navigation }) => {
           alignItems: 'center',
         }}>
         <TouchableOpacity
-          onPress={() => (product.isAvailable ? addToCart(product.id) : null)}
+          // onPress={() => (product.isAvailable ? addToCart(product.id) : null)}
+          onPress={() => addToCart(product)}
           style={{
             width: '86%',
             height: '90%',

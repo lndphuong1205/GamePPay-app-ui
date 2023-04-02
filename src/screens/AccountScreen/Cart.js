@@ -40,16 +40,16 @@ const styles = StyleSheet.create({
   },
 })
 
-const Cart = ({ containerStyle }) => {
+const Cart = ({ containerStyle, onPress }) => {
   return (
-    <TouchableOpacity onPress={() => console.log('navigate cart')}>
+    <TouchableOpacity onPress={onPress}>
       <View style={[styles.container, containerStyle]}>
         <View style={styles.iconRow}>
           <Icon
             name="shopping-cart"
             underlayColor="transparent"
             iconStyle={styles.cartIcon}
-            onPress={() => console.log('navigate cart')}
+            onPress={onPress}
           />
         </View>
         <View style={styles.cartRow}>

@@ -24,13 +24,68 @@ export const sliderData = [
   },
 ];
 
+export const mostBoughtGames = [
+  {
+    poster: require('../assets/images/fortnite.webp'),
+    title: 'Fortnite',
+    subtitle: 'Epic Games',
+    isFree: 'No',
+    price: 25.99,
+    id: '4',
+    productImageList: [
+      require('../assets/images/fortnite.webp'),
+      require('../assets/images/fortnite.webp'),
+      require('../assets/images/fortnite.webp'),
+    ],
+  },
+  {
+    poster: require('../assets/images/miles-morales.webp'),
+    title: 'Spider-Man: Miles Morales',
+    subtitle: 'Marvel',
+    isFree: 'No',
+    price: 29.99,
+    id: '3',
+    productImageList: [
+      require('../assets/images/miles-morales.webp'),
+      require('../assets/images/miles-morales.webp'),
+      require('../assets/images/miles-morales.webp'),
+    ],
+  },
+  {
+    poster: require('../assets/images/asphalt-9.jpeg'),
+    title: 'Asphalt 9',
+    subtitle: 'Gameloft',
+    isFree: 'No',
+    price: 15.99,
+    id: '2',
+    productImageList: [
+      require('../assets/images/asphalt-9.jpeg'),
+      require('../assets/images/asphalt-9.jpeg'),
+      require('../assets/images/asphalt-9.jpeg'),
+    ],
+  },
+  {
+    poster: require('../assets/images/pokemon-unite.jpeg'),
+    title: 'Pokémon Unite',
+    subtitle: 'The Pokémon Company',
+    isFree: 'No',
+    price: 20.99,
+    id: '7',
+    productImageList: [
+      require('../assets/images/pokemon-unite.jpeg'),
+      require('../assets/images/pokemon-unite.jpeg'),
+      require('../assets/images/pokemon-unite.jpeg'),
+    ],
+  },
+];
+
 export const paidGames = [
   {
     poster: require('../assets/images/spiderman.webp'),
     title: 'Spider-Man',
     subtitle: 'Marvel',
     isFree: 'No',
-    price: '$25.99',
+    price: 25.99,
     id: '1',
     productImageList: [
       require('../assets/images/spiderman.webp'),
@@ -43,7 +98,7 @@ export const paidGames = [
     title: 'Battlefield 2042',
     subtitle: 'EA',
     isFree: 'No',
-    price: '$19.99',
+    price: 19.99,
     id: '2',
     productImageList: [
       require('../assets/images/battlefield-2042.webp'),
@@ -56,7 +111,7 @@ export const paidGames = [
     title: 'Spider-Man: Miles Morales',
     subtitle: 'Marvel',
     isFree: 'No',
-    price: '$29.99',
+    price: 29.99,
     id: '3',
     productImageList: [
       require('../assets/images/miles-morales.webp'),
@@ -69,7 +124,7 @@ export const paidGames = [
     title: 'Halo Infinite',
     subtitle: 'Xbox Game',
     isFree: 'No',
-    price: '$24.99',
+    price: 24.99,
     id: '4',
     productImageList: [
       require('../assets/images/halo-infinite.jpeg'),
@@ -82,7 +137,7 @@ export const paidGames = [
     title: 'Far Cry 6',
     subtitle: 'Ubisoft',
     isFree: 'No',
-    price: '$15.99',
+    price: 15.99,
     id: '5',
     productImageList: [
       require('../assets/images/FarCry6.png'),
@@ -95,7 +150,7 @@ export const paidGames = [
     title: 'God of War: Ragnarok',
     subtitle: 'Sony',
     isFree: 'No',
-    price: '$25.99',
+    price: 25.99,
     id: '6',
     productImageList: [
       require('../assets/images/god-of-war.jpeg'),
@@ -108,7 +163,7 @@ export const paidGames = [
     title: 'Pokémon Unite',
     subtitle: 'The Pokémon Company',
     isFree: 'No',
-    price: '$20.99',
+    price: 20.99,
     id: '7',
     productImageList: [
       require('../assets/images/pokemon-unite.jpeg'),
@@ -124,7 +179,7 @@ export const freeGames = [
     title: 'Altos Odyssey',
     subtitle: 'Noodlecake Studios',
     isFree: 'No',
-    price: '$15.99',
+    price: 15.99,
     id: '1',
     productImageList: [
       require('../assets/images/Altos-Odyssey.jpeg'),
@@ -137,7 +192,7 @@ export const freeGames = [
     title: 'Asphalt 9',
     subtitle: 'Gameloft',
     isFree: 'No',
-    price: '$5.99',
+    price: 15.99,
     id: '2',
     productImageList: [
       require('../assets/images/asphalt-9.jpeg'),
@@ -150,7 +205,7 @@ export const freeGames = [
     title: 'Genshin Impact',
     subtitle: 'miHoYo',
     isFree: 'No',
-    price: '$17.99',
+    price: 17.99,
     id: '3',
     productImageList: [
       require('../assets/images/genshin-impact.jpeg'),
@@ -163,7 +218,7 @@ export const freeGames = [
     title: 'Fortnite',
     subtitle: 'Epic Games',
     isFree: 'No',
-    price: '$25.99',
+    price: 25.99,
     id: '4',
     productImageList: [
       require('../assets/images/fortnite.webp'),
@@ -176,7 +231,7 @@ export const freeGames = [
     title: 'Pokémon Unite',
     subtitle: 'The Pokémon Company',
     isFree: 'No',
-    price: '$20.99',
+    price: 20.99,
     id: '5',
     productImageList: [
       require('../assets/images/pokemon-unite.jpeg'),
@@ -189,7 +244,7 @@ export const freeGames = [
     title: 'Diablo 4',
     subtitle: 'Blizzard Entertainment',
     isFree: 'No',
-    price: '$10.99',
+    price: 10.99,
     id: '6',
     productImageList: [
       require('../assets/images/diablo-4.jpeg'),
@@ -202,7 +257,7 @@ export const freeGames = [
     title: 'Halo Infinite',
     subtitle: 'Xbox Game',
     isFree: 'No',
-    price: '$24.99',
+    price: 24.99,
     id: '7',
     productImageList: [
       require('../assets/images/halo-infinite.jpeg'),
@@ -218,7 +273,7 @@ export const toprated = [
     title: 'Far Cry 6',
     subtitle: 'Ubisoft',
     isFree: 'No',
-    price: '$15.99',
+    price: 15.99,
     id: '1',
     productImageList: [
       require('../assets/images/FarCry6.png'),
@@ -231,7 +286,7 @@ export const toprated = [
     title: 'Spider-Man: Miles Morales',
     subtitle: 'Marvel',
     isFree: 'No',
-    price: '$29.99',
+    price: 29.99,
     id: '2',
     productImageList: [
       require('../assets/images/miles-morales.webp'),
@@ -244,7 +299,7 @@ export const toprated = [
     title: 'Battlefield 2042',
     subtitle: 'EA',
     isFree: 'No',
-    price: '$19.99',
+    price: 19.99,
     id: '3',
     productImageList: [
       require('../assets/images/battlefield-2042.webp'),
@@ -257,7 +312,7 @@ export const toprated = [
     title: 'Genshin Impact',
     subtitle: 'miHoYo',
     isFree: 'No',
-    price: '$17.99',
+    price: 17.99,
     id: '4',
     productImageList: [
       require('../assets/images/genshin-impact.jpeg'),
@@ -270,7 +325,7 @@ export const toprated = [
     title: 'Fortnite',
     subtitle: 'Epic Games',
     isFree: 'No',
-    price: '$25.99',
+    price: 25.99,
     id: '5',
     productImageList: [
       require('../assets/images/fortnite.webp'),
@@ -283,7 +338,7 @@ export const toprated = [
     title: 'Pokémon Unite',
     subtitle: 'The Pokémon Company',
     isFree: 'No',
-    price: '$20.99',
+    price: 20.99,
     id: '6',
     productImageList: [
       require('../assets/images/pokemon-unite.jpeg'),
@@ -296,7 +351,7 @@ export const toprated = [
     title: 'Halo Infinite',
     subtitle: 'Xbox Game',
     isFree: 'No',
-    price: '$24.99',
+    price: 24.99,
     id: '7',
     productImageList: [
       require('../assets/images/halo-infinite.jpeg'),

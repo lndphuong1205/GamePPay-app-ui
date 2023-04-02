@@ -12,6 +12,7 @@ import { LogBox } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import DetailScreen from './src/screens/DetailScreen/DetailScreen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import CartScreen from './src/screens/CartScreen/CartScreen';
 
 class App extends Component {
 
@@ -28,6 +29,7 @@ class App extends Component {
             }}>
             <Stack.Screen name='Tab' component={NavigationComponent} />
             <Stack.Screen name='Detail' component={DetailScreen} />
+            <Stack.Screen name='Cart' component={CartScreen} />
           </Stack.Navigator>
         </NavigationContainer>
     );

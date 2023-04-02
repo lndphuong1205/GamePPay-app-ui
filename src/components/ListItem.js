@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { windowWidth } from '../utils/Dimensions';
 
-export default function ListItem({ photo, title, subTitle, isFree, price, onPress, onPressDetail }) {
+export default function ListItem({ photo, title, subTitle, isFree, price, onPressDetail }) {
   return (
     <View style={{
       flexDirection: 'row',
@@ -34,7 +34,7 @@ export default function ListItem({ photo, title, subTitle, isFree, price, onPres
             }}>
             {title}
           </Text>
-          <TouchableOpacity onPress={onPressDetail}>
+          <TouchableOpacity>
             <Text
               style={{
                 textDecorationLine: 'underline',
@@ -43,13 +43,15 @@ export default function ListItem({ photo, title, subTitle, isFree, price, onPres
                 fontSize: 14,
 
               }}>
-              Detail
+              $
+              {isFree == 'Yes' && 'Play'}
+              {isFree == 'No' && price}
             </Text>
           </TouchableOpacity>
         </View>
       </View>
 
-      <TouchableOpacity onPress={onPress} style={{
+      <TouchableOpacity onPress={onPressDetail} style={{
         backgroundColor: '#0aada8',
         padding: 10,
         width: 100,
@@ -61,8 +63,7 @@ export default function ListItem({ photo, title, subTitle, isFree, price, onPres
           fontFamily: 'Roboto-Medium',
           fontSize: 14,
         }}>
-          {isFree == 'Yes' && 'Play'}
-          {isFree == 'No' && price}
+          Details
         </Text>
       </TouchableOpacity>
     </View>

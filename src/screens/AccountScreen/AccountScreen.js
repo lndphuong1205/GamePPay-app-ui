@@ -6,7 +6,7 @@ import Email from './Email';
 import Separator from './Separator';
 import Tel from './Tel';
 
-function AccountScreen() {
+function AccountScreen({ navigation }) {
 
   const Header = () => {
     return (
@@ -75,7 +75,7 @@ function AccountScreen() {
           <Separator />
           <EmailRender />
           <Separator />
-          <Cart />
+          <Cart onPress={() => { navigation.navigate('Cart') }} />
           <Separator />
         </Card>
       </View>

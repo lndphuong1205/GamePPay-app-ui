@@ -7,7 +7,7 @@ import {
   TextInput,
 } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
-import { freeGames, paidGames, toprated } from '../../model/data';
+import { freeGames, paidGames, toprated } from '../../model/dataGames';
 import CustomSwitch from '../../components/CustomSwitch';
 import ListItem from '../../components/ListItem';
 
